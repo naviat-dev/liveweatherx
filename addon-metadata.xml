@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+  <meta>
+    <file-type type="string">FlightGear add-on metadata</file-type>
+    <format-version type="int">1</format-version>
+  </meta>
+
+  <addon>
+    <identifier type="string">org.flightgear.addons.Skeleton</identifier>
+    <name type="string">Skeleton</name>
+    <version type="string">1.1.1</version>
+
+    <authors>
+      <author>
+        <name type="string">Torsten Dreyer</name>
+        <email type="string"></email>
+        <url type="string"></url>
+      </author>
+      <author>
+        <name type="string">Henning Stahlke</name>
+        <email type="string"></email>
+        <url type="string"></url>
+      </author>
+    </authors>
+
+    <maintainers>
+      <maintainer>
+        <name type="string">FlightGear developers</name>
+        <url type="string">
+          https://sourceforge.net/p/flightgear/mailman/flightgear-devel/
+        </url>
+      </maintainer>
+    </maintainers>
+
+    <short-description type="string">
+      Template add-on to help new add-on developers.
+    </short-description>
+
+    <long-description type="string">
+      This add-on does nothing particular, but you may use it as a starting point when writing a new add-on for FlightGear.
+    </long-description>
+
+    <license>
+      <designation type="string">
+        GNU GPL version 2 or later
+      </designation>
+
+      <file type="string">
+        <!-- Use a relative, slash-separated path to a file under the add-on
+             base directory that contains the add-on license text. -->
+      </file>
+
+      <url type="string">
+        https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+      </url>
+    </license>
+
+    <min-FG-version type="string">2017.4.0</min-FG-version>
+    <max-FG-version type="string">none</max-FG-version>
+
+    <urls>
+      <home-page type="string">
+        https://example.com/FlightGear-Skeleton-addon/
+      </home-page>
+
+      <download type="string">
+        https://example.com/FlightGear-Skeleton-addon/download
+      </download>
+
+      <support type="string">
+        https://example.com/FlightGear-Skeleton-addon/support
+      </support>
+
+      <code-repository type="string">
+        https://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Addons/Skeleton/
+      </code-repository>
+    </urls>
+
+    <tags>
+      <tag type="string">skeleton</tag>
+      <tag type="string">dummy</tag>
+      <tag type="string">template</tag>
+    </tags>
+
+    <localized>
+      <!-- If no specific translation is needed for the French territory (the
+           '-FR' part in 'fr-FR'), the following block (fr-FR element) should
+           be omitted. Indeed, the 'fr' element will be used as a fallback if
+           the preferred language is fr-FR, fr-BE, fr-CA, etc. and no matching
+           territory-specific translation is available. -->
+      <fr-FR>
+        <name type="string">Squelette (traduction spécifique fr-FR)</name>
+        <short-description type="string">
+          Modèle de greffon pour aider les nouveaux développeurs de greffons (traduction spécifique fr-FR).
+        </short-description>
+
+        <long-description type="string">
+          Ce greffon ne fait rien de particulier, mais vous pouvez l'utiliser comme point de départ pour l'écriture d'un greffon destiné à FlightGear (traduction spécifique fr-FR).
+        </long-description>
+      </fr-FR>
+
+      <fr>
+        <name type="string">Squelette</name>
+        <short-description type="string">
+          Modèle de greffon pour aider les nouveaux développeurs de greffons.
+        </short-description>
+
+        <long-description type="string">
+          Ce greffon ne fait rien de particulier, mais vous pouvez l'utiliser comme point de départ pour l'écriture d'un greffon destiné à FlightGear.
+        </long-description>
+      </fr>
+    </localized>
+  </addon>
+</PropertyList>
