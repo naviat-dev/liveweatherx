@@ -26,15 +26,15 @@ along with FlightGear.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
 <PropertyList>
-    <addons>
-        <by-id>
-            <org.flightgear.addons.Skeleton>
-                <addon-devel>
-                    <foo type="int">1</foo>
-                    <bar type="bool">false</bar>
-                    <my-prop>sample</my-prop>
-                </addon-devel>
-            </org.flightgear.addons.Skeleton>
-        </by-id>
-    </addons>
+	<addons>
+		<by-id>
+			<org.flightgear.addons.Skeleton>
+				<addon-devel>
+					<foo type="int">1</foo>
+					<bar type="bool">false</bar>
+					<my-prop>sample</my-prop>
+				</addon-devel>
+			</org.flightgear.addons.Skeleton>
+		</by-id>
+	</addons>
 </PropertyList>
