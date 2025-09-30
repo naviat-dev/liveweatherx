@@ -64,8 +64,8 @@ var stop = func {
     
 }
 
-delete(globals, "livewx");
-globals["livewx"] = {
+delete(globals, "livewxx");
+globals["livewxx"] = {
 	"start": start,
     "stop": stop,
     "once": loop
