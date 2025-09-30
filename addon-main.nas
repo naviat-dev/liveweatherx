@@ -43,9 +43,18 @@ var unload = func(addon) {
 	#
 	# Other resources should be freed by adding the corresponding code here,
 	# e.g. myCanvas.del();
+
+	_v_port.cleanup();
+	delete(globals, "_v_port");
+
 }
 
 var main = func(addon) {
+
+
+	io.load_nasal(addon.basePath~"/port.nas", "_v_port"); # Temporary file for the ported nasal script
+	_v_port.init(addon);
+
 	logprint(LOG_INFO, "Skeleton addon initialized from path ", addon.basePath);
 	var latInit = getprop("/position/latitude-deg");
 	var lonInit = getprop("/position/longitude-deg");
