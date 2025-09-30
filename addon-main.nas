@@ -67,7 +67,7 @@ var update = func(lat, lon, alt) {
 		pressureLower = pressureIndex[pressureIndex.size() - 1][1];
 		pressureUpper = pressureIndex[pressureIndex.size() - 1][1];
 	} else {
-		for (var i = 0; i < pressureIndex.size() - 1; i++) {
+		for (var i = 0; i < pressureIndex.size() - 1; i += 1) {
 			if (alt_m >= pressureIndex[i][0] and alt_m < pressureIndex[i + 1][0]) {
 				pressureLower = pressureIndex[i][1];
 				pressureUpper = pressureIndex[i + 1][1];
