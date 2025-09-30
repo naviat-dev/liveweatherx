@@ -24,6 +24,13 @@
 					<dialog-name>addon-sample-dialog</dialog-name>
 				</binding>
 			</item>
+			<item>
+				<label>Settings</label>
+				<binding>
+					<command>dialog-show</command>
+					<dialog-name>livewxx-settings</dialog-name>
+				</binding>
+			</item>
 
 			<!--
 			FOR DEVELOPMENT ONLY!

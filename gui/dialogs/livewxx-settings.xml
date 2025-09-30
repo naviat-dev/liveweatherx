@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <name>livewxx-settings</name>
+    <layout>vbox</layout>
+
+	<group>
+		<layout>hbox</layout>
+		<empty>
+			<stretch>1</stretch>
+		</empty>
+		<text>
+			<label>Liveweatherx settings</label>
+		</text>
+		<empty>
+			<stretch>1</stretch>
+		</empty>
+		<button>
+			<pref-width>16</pref-width>
+			<pref-height>16</pref-height>
+			<legend></legend>
+			<keynum>27</keynum>
+			<border>2</border>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+	</group>
+	<hrule />
+
+	<group>
+		<layout>hbox</layout>
+		<text>
+			<label>Fetch winds aloft</label>
+		</text>
+		<button>
+			<legend>Start</legend>
+			<binding>
+				<command>nasal</command>
+				<script>livewxx.start()</script>
+			</binding>
+		</button>
+		<button>
+			<legend>Stop</legend>
+			<binding>
+				<command>nasal</command>
+				<script>livewxx.stop()</script>
+			</binding>
+		</button>
+	</group>
+
+	<button>
+		<legend>Close</legend>
+		<binding>
+			<command>dialog-close</command>
+		</binding>
+	</button>
+</PropertyList>
