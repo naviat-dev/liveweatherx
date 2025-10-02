@@ -25,28 +25,46 @@
 			</binding>
 		</button>
 	</group>
+
 	<hrule />
 
 	<group>
 		<layout>hbox</layout>
 		<text>
-			<label>Fetch winds aloft</label>
+			<label>Status</label>
 		</text>
-		<button>
-			<legend>Start</legend>
-			<binding>
-				<command>nasal</command>
-				<script>livewxx.start()</script>
-			</binding>
-		</button>
-		<button>
-			<legend>Stop</legend>
-			<binding>
-				<command>nasal</command>
-				<script>livewxx.stop()</script>
-			</binding>
-		</button>
+		<text>
+			<label>1234567890</label>
+			<live>true</live>
+			<property>/livewxx/status-text</property>
+		</text>
 	</group>
+
+	<hrule />
+
+	<checkbox>
+		<label>Master switch</label>
+		<property>/livewxx/enable</property>
+		<live>true</live>
+		<enable>
+			<property>/livewxx/available</property>
+		</enable>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+	</checkbox>
+
+	<text>
+		<label>Disable Detailed Weather!</label>
+		<color>
+			<red>   1.0 </red>
+			<green> 0.0 </green>
+			<blue>  0.0 </blue>
+		</color>
+		<visible>
+			<property>/nasal/local_weather/enabled</property>
+		</visible>
+	</text>
 
 	<button>
 		<legend>Close</legend>
