@@ -2,7 +2,7 @@ var aloft = props.getNode("environment/config/aloft");
 var status = props.getNode("livewxx/status-text", 1);
 var available = props.getNode("/livewxx/available", 1);
 
-var MIN_FETCH_INTERVAL = 10; # Makes sure we do not exceed rate limits
+var MIN_FETCH_INTERVAL = 15; # Makes sure we do not exceed rate limits
 var MAX_FETCH_INTERVAL = 60;
 
 var MIN_FETCH_DDIST = 1000;
