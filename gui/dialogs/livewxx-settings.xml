@@ -54,6 +54,18 @@
 		</binding>
 	</checkbox>
 
+	<checkbox>
+		<label>Use simulator date and time</label>
+		<property>/livewxx/use-sim-time</property>
+		<live>true</live>
+		<enable>
+			<property>/livewxx/available</property>
+		</enable>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+	</checkbox>
+
 	<text>
 		<label>Disable Detailed Weather!</label>
 		<color>
