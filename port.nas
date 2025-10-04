@@ -5,7 +5,7 @@ var available = props.getNode("/livewxx/available", 1);
 var MIN_FETCH_INTERVAL = 15; # Makes sure we do not exceed rate limits
 var MAX_FETCH_INTERVAL = 60;
 
-var MIN_FETCH_DDIST = 1000;
+var MIN_FETCH_DIST = 1000;
 
 
 var LEVELS = ["850", "700", "500", "400", "300"];
@@ -47,7 +47,7 @@ var main_loop = func {
     var pos = geo.aircraft_position();
     var dt = systime() - last_fetch_t;
 
-    if (pos.distance_to(last_fetch_pos) < MIN_FETCH_DDIST and dt < MAX_FETCH_INTERVAL) {
+    if (pos.distance_to(last_fetch_pos) < MIN_FETCH_DIST and dt < MAX_FETCH_INTERVAL) {
         print("Not fetching because too little distance");
         return;
     }
