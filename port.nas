@@ -42,8 +42,8 @@ var cleanup = func() {
     delete(globals, "json");
 }
 
-var last_fetch_pos = geo.aircraft_position();
-var last_fetch_t = systime();
+var last_fetch_pos = geo.Coord.new();
+var last_fetch_t = 0;
 
 var main_loop = func {
     print("Executing main loop");
